@@ -1,4 +1,4 @@
-package com.ecom.domain.model
+package com.ecom.domain.entities
 
 import java.math.BigDecimal
 import java.time.LocalDateTime

@@ -26,4 +26,3 @@ rootProject.name = "ecom"
 include(":app")
 include(":domain")
 include(":data")
-include(":core")

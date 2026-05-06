@@ -1,4 +1,4 @@
-package com.ecom.domain.model
+package com.ecom.domain.entities
 
 import java.math.BigDecimal
 import java.time.LocalDateTime
@@ -9,7 +9,7 @@ data class Order(
     val userId: UUID,
     val items: List<OrderItem> = emptyList(),
     val totalAmount: BigDecimal,
-    val shippingAddress: Address,
+    val shippingAddress: Address? = null,
     val status: OrderStatus,
     val createdAt: LocalDateTime,
     val updatedAt: LocalDateTime? = null
