@@ -7,7 +7,6 @@ data class User(
     val id: UUID,
     val name: String,
     val email: String,
-    val password: String,
     val role: UserRole,
     val addresses: List<Address> = emptyList(),
     val createdAt: LocalDateTime,
@@ -15,6 +14,8 @@ data class User(
 )
 
 enum class UserRole {
-    CUSTOMER,
-    ADMIN
+    Admin,
+    Guest,
+    Customer,
+    Operator
 }
